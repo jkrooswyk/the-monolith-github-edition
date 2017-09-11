@@ -17,7 +17,7 @@ server.mount_proc '/' do |request, response|
   sleep 0.125 + SecureRandom.random_number*0.250
 end
 
-#Return a successful Hello World response.
+##Return a successful Hello World response.
 #server.mount_proc '/' do |request, response|
 #  response.body = 'oHell, world!'
 #  sleep 0.125 + SecureRandom.random_number*0.250
