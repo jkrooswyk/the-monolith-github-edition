@@ -83,3 +83,19 @@ stop_review:
     - branches
   except:
     - master
+    
+test-unit:
+  stage: test
+  script:
+    - exit 0
+    
+test-integration:
+  stage: test
+  script:
+    - exit 0
+
+test-coverage-report:
+  stage: test
+  script:
+    - exit 0
+
