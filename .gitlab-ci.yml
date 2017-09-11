@@ -87,7 +87,12 @@ stop_review:
 test-unit:
   stage: test
   script:
-    - exit 0
+    - mvn $MAVEN_CLI_OPTS jacoco:prepare-agent test
+    - echo -n "Code coverage is "; grep -m1 -Po '(?<=<td class="ctr2">).*?(?=</td>)' target/site/jacoco-ut/index.html | head -n1
+  artifacts:
+    paths:
+      - target/site/jacoco-ut
+
     
 test-integration:
   stage: test
