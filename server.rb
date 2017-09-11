@@ -1,5 +1,7 @@
 require 'webrick'
 require 'securerandom'
+require 'simplecov'
+SimpleCov.start
 
 server = WEBrick::HTTPServer.new :Port => 5000
 
