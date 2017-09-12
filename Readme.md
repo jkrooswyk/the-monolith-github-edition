@@ -12,6 +12,6 @@ This is code coverage in a Merge Request:
 
 ![MR Widget](img/pipelines_test_coverage_mr_widget.png)
 
-This is code coverage within a pipeline view
+This is code coverage within a pipeline view:
 
 ![Pipeline Coverage](img/pipelines_test_coverage_build.png)
