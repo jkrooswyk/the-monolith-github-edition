@@ -8,7 +8,6 @@ This is Hello World.
 
 Images related to code coverage:
 
+![MR Widget](img/pipelines_test_coverage_mr_widget.png)
 
-![test coverage]: (https://docs.gitlab.com/ee/user/project/pipelines/img/pipelines_test_coverage_mr_widget.png)
-
-![test coverage 2]: (https://docs.gitlab.com/ee/user/project/pipelines/img/pipelines_test_coverage_build.png)
+![Pipeline Coverage](img/pipelines_test_coverage_build.png)
