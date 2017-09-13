@@ -1,18 +1,18 @@
-:bug: **Issue ID for Defect?**
+:beetle: **Issue ID for Defect?**
 
 
-:bug: **Related Issues?**
+:beetle: **Related Issues?**
 
 
-:merged: **P1 Fix?**
+:pick: **P1 Fix?**
 - [ ] Yes
 - [ ] No
 
-:merged: **Reproducible Defect?**
+:pick: **Reproducible Defect?**
 - [ ] Yes
 - [ ] No
 
-:merged: **Cross Project Impact?**
+:pick: **Cross Project Impact?**
 - [ ] Yes
 - [ ] No
 
