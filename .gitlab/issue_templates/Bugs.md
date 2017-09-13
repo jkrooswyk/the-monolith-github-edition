@@ -1,36 +1,36 @@
-:bug: ## Defect Summary
+:bug: **Defect Summary**
 
 
-:bug: ## Expected Behavior
+:bug: **Expected Behavior**
 
 
-:bug: ## Observed Behavior
+:bug: **Observed Behavior**
 
 
-:bug: ## Steps to Reproduce
+:bug: **Steps to Reproduce**
 1.   
 2.   
 3.   
 
-:bug: ### OS
+:bug: **OS**
 - [ ] Windows
 - [ ] MAC
 - [ ] Linux
 - [ ] Other
 
-:bug: ### Environment
+:bug: **Environment**
 - [ ] Container
 - [ ] VM
 - [ ] Native
 - [ ] Other
 
-:bug: ### Priority
+:bug: **Priority**
 - [ ] 1
 - [ ] 2
 - [ ] 3
 - [ ] 4
 
-:bug: ### Severity
+:bug: **Severity**
 - [ ] Critical
 - [ ] Major
 - [ ] Minor
