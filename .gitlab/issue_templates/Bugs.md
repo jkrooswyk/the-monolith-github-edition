@@ -1,10 +1,10 @@
-:beetle: **Defect Summary**
+:beetle: **Defect Summary**   
 
 
-:beetle: **Expected Behavior**
+:beetle: **Expected Behavior**   
 
 
-:beetle: **Observed Behavior**
+:beetle: **Observed Behavior**   
 
 
 :beetle: **Steps to Reproduce**
@@ -17,11 +17,13 @@
 - [ ] MAC
 - [ ] Linux
 - [ ] Other
-
+- 
 :beetle: **Environment**
 - [ ] Container
 - [ ] VM
 - [ ] Native
+- [ ] AWS
+- [ ] Azure
 - [ ] Other
 
 :beetle: **Priority**
