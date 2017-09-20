@@ -84,7 +84,12 @@ stop_review:
   except:
     - master
     
-rspec-unit-test:
+rspec-mysql-unit-test:
+  stage: test
+  script:
+    - exit 0
+
+rspec-postgres-unit-test:
   stage: test
   script:
     - exit 0
@@ -99,7 +104,18 @@ simplecov-code-coverage:
   script:
     - exit 0
 
-cucumber-acceptance-test:
+cucumber-mysql-acceptance-test:
   stage: test
   script:
     - exit 0
+
+cucumber-postgres-acceptance-test:
+  stage: test
+  script:
+    - exit 0
+
+rubocop-static-analysis-test
+  stage: test
+  script:
+    - exit 0
+
