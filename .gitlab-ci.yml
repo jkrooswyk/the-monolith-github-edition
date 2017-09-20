@@ -114,7 +114,7 @@ cucumber-postgres-acceptance-test:
   script:
     - exit 0
 
-rubocop-static-analysis-test
+rubocop-static-analysis-test:
   stage: test
   script:
     - exit 0
