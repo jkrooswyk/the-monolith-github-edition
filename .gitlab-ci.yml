@@ -99,11 +99,6 @@ simplecov-code-coverage:
   script:
     - exit 0
 
-rspec-test:
-  stage: test
-  script:
-    - exit 0
-    
 cucumber-acceptance-test:
   stage: test
   script:
