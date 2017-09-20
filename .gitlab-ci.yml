@@ -84,18 +84,27 @@ stop_review:
   except:
     - master
     
-test-unit:
+rspec-unit-test:
   stage: test
   script:
     - exit 0
     
-test-integration:
+coveralls-integration-test:
   stage: test
   script:
     - exit 0
 
-test-coverage-report:
+simplecov-code-coverage:
   stage: test
   script:
     - exit 0
 
+rspec-test:
+  stage: test
+  script:
+    - exit 0
+    
+cucumber-acceptance-test:
+  stage: test
+  script:
+    - exit 0
