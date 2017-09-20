@@ -2,7 +2,7 @@
 
 Read me first!
 
-This is Hello World.
+This is "Hello from GitLab" (Hello World).
 
 ---------------------
 
