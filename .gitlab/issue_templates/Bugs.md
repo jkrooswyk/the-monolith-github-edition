@@ -1,11 +1,11 @@
 :beetle: **Defect Summary**   
-
+  
 
 :beetle: **Expected Behavior**   
-
+  
 
 :beetle: **Observed Behavior**   
-
+  
 
 :beetle: **Steps to Reproduce**
 1.   
@@ -22,6 +22,7 @@
 - [ ] Container
 - [ ] VM
 - [ ] Native
+- [ ] GCloud
 - [ ] AWS
 - [ ] Azure
 - [ ] Other
