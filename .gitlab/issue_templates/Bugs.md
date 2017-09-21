@@ -28,10 +28,10 @@
 - [ ] Other
 
 :beetle: **Priority**
-- [ ] 1
-- [ ] 2
-- [ ] 3
-- [ ] 4
+- [ ] P1
+- [ ] P2
+- [ ] P3
+- [ ] P4
 
 :beetle: **Severity**
 - [ ] Critical
