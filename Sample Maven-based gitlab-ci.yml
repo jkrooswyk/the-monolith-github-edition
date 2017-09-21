@@ -16,10 +16,17 @@ stages:
   - deploy
   - trigger
 
-build:
+buildwithsonarqube:
   stage: build
+  artifacts:
+    paths:
+    - target/*.jar
   script:
-    - mvn $MAVEN_CLI_OPTS compile
+    - mvn package sonar:sonar -Dsonar.host.url=https://sonar.yourdomain.tld/
+  only:
+    - master
+#  script:
+#    - mvn $MAVEN_CLI_OPTS compile
 
 test:
   stage: test
