@@ -17,7 +17,7 @@
 - [ ] MAC
 - [ ] Linux
 - [ ] Other
-- 
+
 :beetle: **Environment**
 - [ ] Container
 - [ ] VM
