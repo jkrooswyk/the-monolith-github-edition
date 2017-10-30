@@ -11,7 +11,7 @@ server.mount_proc '/' do |request, response|
   style += 'body { background-color: slategray; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 250%; }'
   style += '</style>'
   
-  message = 'Hello from GitLab!'
+  message = 'oHello from GitLab!'
   
   body = "<body>#{message}</body>"
   
