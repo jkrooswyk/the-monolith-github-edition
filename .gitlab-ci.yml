@@ -120,7 +120,7 @@ rubocop-static-analysis-test:
   script:
     - exit 0
 
-tech-doc-creation:
+tech-docs:
   stage: doc
   script:
     - exit 0
