@@ -10,6 +10,7 @@ variables:
 stages:
   - build
   - test
+  - doc
   - review
   - staging
   - canary
@@ -119,3 +120,7 @@ rubocop-static-analysis-test:
   script:
     - exit 0
 
+tech-doc-creation:
+  stage: doc
+  script:
+    - exit 0
