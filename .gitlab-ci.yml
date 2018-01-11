@@ -122,8 +122,5 @@ rubocop-static-analysis-test:
 
 tanuki-docs:
   stage: doc
-  image: docker:latest
-  services:
-  - docker:dind
   script:
-    - docker run registry.gitlab.com/boleary/gitlab-container
+    - exit 0
