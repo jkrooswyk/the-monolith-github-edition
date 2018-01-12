@@ -84,6 +84,14 @@ stop_review:
     - branches
   except:
     - master
+
+SAST:
+  stage: test
+  image: registry.gitlab.com/gitlab-org/gl-sast:latest
+  script:
+    - /app/bin/run .
+  artifacts:
+    paths: [gl-sast-report.json]
     
 rspec-mysql-unit-test:
   stage: test
