@@ -14,7 +14,8 @@ stages:
   - review
   - staging
   - canary
-  - production
+  - production-blue
+  - production-green
   - cleanup
 
 build:
@@ -36,7 +37,7 @@ canary:
     - master
 
 blue:
-  stage: production
+  stage: production-blue
   script:
     - command deploy
   environment:
@@ -47,7 +48,7 @@ blue:
     - master
 
 green:
-  stage: production
+  stage: production-green
   script:
     - command deploy
   environment:
