@@ -41,7 +41,7 @@ blue:
     - command deploy
   environment:
     name: prod-blue
-    url: http://$CI_PROJECT_PATH_SLUG-prod-blue.$KUBE_DOMAIN
+    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
   when: manual
   only:
     - master
@@ -52,7 +52,7 @@ green:
     - command deploy
   environment:
     name: prod-green
-    url: http://$CI_PROJECT_PATH_SLUG-prod-green.$KUBE_DOMAIN
+    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
   when: manual
   only:
     - master
