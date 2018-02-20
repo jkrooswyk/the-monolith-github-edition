@@ -30,7 +30,7 @@ canary:
     - command canary
   environment:
     name: prod-blue
-    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
+    url: http://$CI_PROJECT_PATH_SLUG-prodblue.$KUBE_DOMAIN
   when: manual
   only:
     - master
@@ -41,7 +41,7 @@ blue:
     - command deploy
   environment:
     name: prod-blue
-    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
+    url: http://$CI_PROJECT_PATH_SLUG-prodblue.$KUBE_DOMAIN
   when: manual
   only:
     - master
@@ -52,7 +52,7 @@ green:
     - command deploy
   environment:
     name: prod-green
-    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
+    url: http://$CI_PROJECT_PATH_SLUG-prodgreen.$KUBE_DOMAIN
   when: manual
   only:
     - master
