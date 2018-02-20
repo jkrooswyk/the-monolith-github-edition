@@ -29,7 +29,7 @@ canary:
   script:
     - command canary
   environment:
-    name: production
+    name: prod-blue
     url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
   when: manual
   only:
@@ -40,7 +40,7 @@ blue:
   script:
     - command deploy
   environment:
-    name: production-blue
+    name: prod-blue
     url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
   when: manual
   only:
@@ -51,7 +51,7 @@ green:
   script:
     - command deploy
   environment:
-    name: production-green
+    name: prod-green
     url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
   when: manual
   only:
