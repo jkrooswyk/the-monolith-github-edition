@@ -35,7 +35,18 @@ canary:
   only:
     - master
 
-production:
+blue:
+  stage: production
+  script:
+    - command deploy
+  environment:
+    name: production
+    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
+  when: manual
+  only:
+    - master
+
+green:
   stage: production
   script:
     - command deploy
