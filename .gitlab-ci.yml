@@ -29,8 +29,8 @@ canary:
   script:
     - command canary
   environment:
-    name: production
-    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
+    name: prodblue
+    url: http://$CI_PROJECT_PATH_SLUG-prod-blue.$KUBE_DOMAIN
   when: manual
   only:
     - master
