@@ -40,8 +40,8 @@ blue:
   script:
     - command deploy
   environment:
-    name: prod-blue
-    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
+    name: prodblue
+    url: http://$CI_PROJECT_PATH_SLUG-prod-blue.$KUBE_DOMAIN
   when: manual
   only:
     - master
@@ -51,8 +51,8 @@ green:
   script:
     - command deploy
   environment:
-    name: prod-green
-    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
+    name: prodgreen
+    url: http://$CI_PROJECT_PATH_SLUG-prod-green.$KUBE_DOMAIN
   when: manual
   only:
     - master
