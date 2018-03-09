@@ -10,6 +10,7 @@ variables:
 stages:
   - build
   - test
+  - doc
   - review
   - staging
   - canary
@@ -28,19 +29,30 @@ canary:
   script:
     - command canary
   environment:
-    name: production
-    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
+    name: prodblue
+    url: http://$CI_PROJECT_PATH_SLUG-prod-blue.$KUBE_DOMAIN
   when: manual
   only:
     - master
 
-production:
+blue:
   stage: production
   script:
     - command deploy
   environment:
-    name: production
-    url: http://$CI_PROJECT_PATH_SLUG.$KUBE_DOMAIN
+    name: prodblue
+    url: http://$CI_PROJECT_PATH_SLUG-prod-blue.$KUBE_DOMAIN
+  when: manual
+  only:
+    - master
+
+green:
+  stage: production
+  script:
+    - command deploy
+  environment:
+    name: prodgreen
+    url: http://$CI_PROJECT_PATH_SLUG-prod-green.$KUBE_DOMAIN
   when: manual
   only:
     - master
@@ -83,6 +95,16 @@ stop_review:
     - branches
   except:
     - master
+
+SAST:
+  stage: test
+  script:
+    - exit 0
+#  image: registry.gitlab.com/gitlab-org/gl-sast:latest
+#  script:
+#    - /app/bin/run .
+#  artifacts:
+#    paths: [gl-sast-report.json]
     
 rspec-mysql-unit-test:
   stage: test
@@ -119,3 +141,7 @@ rubocop-static-analysis-test:
   script:
     - exit 0
 
+tanuki-docs:
+  stage: doc
+  script:
+    - exit 0
