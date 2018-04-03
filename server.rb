@@ -8,10 +8,10 @@ server = WEBrick::HTTPServer.new :Port => 5000
 #Return a successful Hello World response.
 server.mount_proc '/' do |request, response|
   style = '<style type="text/css" media="screen">'
-  style += 'body { background-color: slategray; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 250%; }'
+  style += 'body { background-color: darkgreen; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 250%; }'
   style += '</style>'
   
-  message = 'Hello World - from the Monolith'
+  message = 'Hello World, from the GitHub Monolith'
   
   body = "<body>#{message}</body>"
   
